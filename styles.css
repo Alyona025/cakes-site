@@ -59,7 +59,8 @@ h6 {
 Medium 500
 Bold 700 */
 html {
-    overflow-x: hidden
+    overflow-x: hidden;
+    color-scheme: light;
 }
 
 body {
