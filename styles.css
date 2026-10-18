@@ -83,14 +83,16 @@ h2 {
     display: inline-block;
     border-radius: 8px;
     padding: 30px 50px;
-    background-color: #fed84c !important; /* Твой жёлтый цвет */
-    color: #2e363e !important;            /* Твой тёмный текст */
+    background-color: #fed84c !important;
+    /* Твой жёлтый цвет */
+    color: #2e363e !important;
+    /* Твой тёмный текст */
     font-weight: 500;
     font-size: 18px;
     text-align: center;
     transition: background-color 0.3s ease;
     /* Плавность */
-    
+
 }
 
 /* Менять цвет без нажатия (просто навели мышь) */
@@ -395,6 +397,8 @@ h2 {
     /* Включает Flexbox внутри карточки */
     flex-direction: column;
     /* Элементы внутри будут идти строго сверху вниз */
+    align-items: center;
+
 }
 
 .product-card__img {
@@ -435,7 +439,7 @@ h2 {
 .product-card__btn {
     border-radius: 8px;
     padding: 20px 40px;
-
+    max-width: 163px;
 }
 
 .custom-orrde {
@@ -759,7 +763,7 @@ h2 {
 
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -5px;
     z-index: 5;
 
     width: 100%;
@@ -1192,6 +1196,15 @@ h2 {
 
     }
 
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .product-card {
+        max-width: 445px;
+    }
+
 }
 
 /* Переходим в режим мобилки */
@@ -1233,6 +1246,7 @@ h2 {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        gap: 8px;
     }
 
     .welcome__title {
@@ -1251,11 +1265,7 @@ h2 {
         margin-right: 0;
     }
 
-    .catalog__grid {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
 
-    }
 
     .custom-orrde {
         background-color: #081130;
@@ -1324,6 +1334,10 @@ h2 {
 
     .gallery__grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-card__btn{
+        max-width: 100%;
     }
 
     .footer__info-links {
