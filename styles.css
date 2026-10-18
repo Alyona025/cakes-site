@@ -60,7 +60,7 @@ Medium 500
 Bold 700 */
 html {
     overflow-x: hidden;
-    color-scheme: light;
+    color-scheme: only light !important;
 }
 
 body {
@@ -83,18 +83,20 @@ h2 {
     display: inline-block;
     border-radius: 8px;
     padding: 30px 50px;
-    background-color: #fed84c;
-
+    background-color: #fed84c !important; /* Твой жёлтый цвет */
+    color: #2e363e !important;            /* Твой тёмный текст */
     font-weight: 500;
     font-size: 18px;
     text-align: center;
-    color: #2e363e;
-    transition: background-color 0.3s ease; /* Плавность */
+    transition: background-color 0.3s ease;
+    /* Плавность */
+    
 }
 
 /* Менять цвет без нажатия (просто навели мышь) */
 .btn:hover {
-    background-color: #2e363e; /* Новый цвет */
+    background-color: #2e363e;
+    /* Новый цвет */
     color: #fed84c;
 }
 
@@ -106,7 +108,7 @@ h2 {
     background: #f2f6fa;
 
     font-size: 11px;
-    line-height: 150%; 
+    line-height: 150%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #2e363e;
