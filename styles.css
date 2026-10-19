@@ -1362,3 +1362,24 @@ h2 {
         /* Защитит форму в футере от вылезания на маленьких айфонах */
     }
 }
+/* Если телефон пользователя требует тёмную тему, мы принудительно возвращаем белый фон сайту */
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+        color: #2e363e !important;
+    }
+    
+    /* Железобетонно возвращаем жёлтый цвет кнопкам */
+    .btn, .order_form__button, .product-card__btn {
+        background-color: #fed84c !important;
+        background: #fed84c !important;
+        color: #2e363e !important;
+    }
+    
+    /* Защищаем карточки товара от почернения */
+    .product-card {
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+    }
+}
