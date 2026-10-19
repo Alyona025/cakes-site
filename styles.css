@@ -556,7 +556,7 @@ h2 {
 
 .baker {
     color: #2e363e;
-    background-color: #fff;
+    background-color: #fff !important;
 }
 
 .baker .container {
@@ -932,7 +932,7 @@ h2 {
 
 .gallery {
     color: #2e363e;
-    background-color: #fff;
+    background-color: #fff !important;
 }
 
 .gallery__header {
