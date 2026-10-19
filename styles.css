@@ -60,7 +60,6 @@ Medium 500
 Bold 700 */
 html {
     overflow-x: hidden;
-    color-scheme: only light !important;
 }
 
 body {
@@ -74,6 +73,9 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    color-scheme: light only !important; /* Ультимативный запрет на уровне стилей */
+}
 
 h2 {
     font-weight: 500;
@@ -957,7 +959,9 @@ h2 {
 
 .gallery__item {}
 
-.gallery__img {}
+.gallery__img {
+    width: 100%;
+}
 
 .footer {
     background-color: #081130;
